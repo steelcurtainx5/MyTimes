@@ -24,61 +24,53 @@
   }
   .column.medium {
     width: 300px;
-  }
+    display: flex;
+    flex-direction: column;
+    }
   .column.small {
     width: 240px;
   }
   .story{
-    border: solid 2px black;
-  }
+    }
 .mom {
-  border: solid 2px black;
   background-image: url("../images/img-story-main.png");
   height: 300px;
   font-size: 40px !important;
   }
 .a {
-  border: solid 2px black;
-}
+  }
 .b {
-  border: solid 2px black;
+  grid-area: b;
 }
 .c {
-  border: solid 2px black;
   background-image: url("../images/img-story-2.png");
   height: 300px;
   text-align: center;
+  grid-area: c;
   }
 .d {
-  border: solid 2px black;
+  grid-area: d;
 }
 .e {
-  border: solid 2px black;
   background-image: url("../images/img-story-3.png");
   height: 300px;
   text-align: center;
 }
 .f {
-  border: solid 2px black;
-}
+  }
 .g {
-  border: solid 2px black;
   background-image: url("../images/img-story-1.png");
   height: 300px;
   text-align: center;
   }
 .h {
-  border: solid 2px black;
-}
+  }
 .i {
-  border: solid 2px black;
   background-image: url("../images/img-news-bite.png");
   height: 200px;
 }
 .j {
-  border: solid 2px black;
-
-}
+  }
 .a, .b, .d, .e, .f, .g, .h, .i, .j {
   font-family: Georgia;
   font-size: 17px;
@@ -89,5 +81,11 @@
   font-size: 30px;
   color: White;
   font-weight: bold;
+}
+.quad {
+  display: grid;
+  grid-template-areas: "d b"
+                       "c e";
+  grid-gap: 40px;
 }
 .footer {}
